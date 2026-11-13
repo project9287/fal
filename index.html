@@ -17,7 +17,7 @@
             position: fixed; 
             top: 20px;
             right: 20px;
-            width: 20px; 
+            width: 40px; 
             height: auto;
             z-index: 10000; 
         }
@@ -39,7 +39,7 @@
         }
 
         .logo-centro {
-            width: 100px; 
+            width: 150px; 
             height: auto;
             margin-bottom: 20px;
         }
@@ -87,13 +87,11 @@
 </head>
 
 <body>
-    <!-- AHORA BUSCA icono.jpeg -->
+    <!-- IMÁGENES -->
     <img src="icono.jpeg" alt="Icon" class="icono-esquina">
 
     <div id="pantalla-carga">
-        <!-- AHORA BUSCA logo.jpeg -->
         <img src="logo.jpeg" alt="Logo" class="logo-centro">
-        
         <div class="titulo-carga">Ask a question, and select 3 cards from the deck.</div>
         <div class="subtitulo-carga">Read them in the order they appear.</div>
     </div>
@@ -102,20 +100,24 @@
 
     <a-scene embedded vr-mode-ui="enabled: false" arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
         
-        <a-nft type="nft" url="https://carlosgpenagos-cpu.github.io/CARDS/marcadores/carta1" id="carta-1" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-            <a-entity gltf-model="url(https://carlosgpenagos-cpu.github.io/CARDS/modelos/animacion1.glb)" animation-mixer="loop: repeat" scale="300 300 300" position="150 0 -250"></a-entity>
+        <!-- CARTA 1: Nuevas rutas para project9287/fal -->
+        <a-nft type="nft" url="https://project9287.github.io/fal/marcadores/carta1" id="carta-1" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-entity gltf-model="url(https://project9287.github.io/fal/modelos/animacion1.glb)" animation-mixer="loop: repeat" scale="300 300 300" position="150 0 -250"></a-entity>
         </a-nft>
 
-        <a-nft type="nft" url="https://carlosgpenagos-cpu.github.io/CARDS/marcadores/carta2" id="carta-2" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-            <a-entity gltf-model="url(https://carlosgpenagos-cpu.github.io/CARDS/modelos/animacion2.glb)" animation-mixer="loop: repeat" scale="300 300 300" rotation="-90 0 0" position="250 0 -150"></a-entity>
+        <!-- CARTA 2 -->
+        <a-nft type="nft" url="https://project9287.github.io/fal/marcadores/carta2" id="carta-2" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-entity gltf-model="url(https://project9287.github.io/fal/modelos/animacion2.glb)" animation-mixer="loop: repeat" scale="300 300 300" rotation="-90 0 0" position="250 0 -150"></a-entity>
         </a-nft>
 
-        <a-nft type="nft" url="https://carlosgpenagos-cpu.github.io/CARDS/marcadores/carta3" id="carta-3" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-            <a-entity gltf-model="url(https://carlosgpenagos-cpu.github.io/CARDS/modelos/animacion3.glb)" animation-mixer="loop: repeat" scale="300 300 300" rotation="-90 0 0" position="250 0 -150"></a-entity>
+        <!-- CARTA 3 -->
+        <a-nft type="nft" url="https://project9287.github.io/fal/marcadores/carta3" id="carta-3" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-entity gltf-model="url(https://project9287.github.io/fal/modelos/animacion3.glb)" animation-mixer="loop: repeat" scale="300 300 300" rotation="-90 0 0" position="250 0 -150"></a-entity>
         </a-nft>
 
-        <a-nft type="nft" url="https://carlosgpenagos-cpu.github.io/CARDS/marcadores/carta4" id="carta-4" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-            <a-entity gltf-model="url(https://carlosgpenagos-cpu.github.io/CARDS/modelos/animacion4.glb)" animation-mixer="loop: repeat" scale="300 300 300" rotation="-90 0 0" position="250 0 -150"></a-entity>
+        <!-- CARTA 4 -->
+        <a-nft type="nft" url="https://project9287.github.io/fal/marcadores/carta4" id="carta-4" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-entity gltf-model="url(https://project9287.github.io/fal/modelos/animacion4.glb)" animation-mixer="loop: repeat" scale="300 300 300" rotation="-90 0 0" position="250 0 -150"></a-entity>
         </a-nft>
 
         <a-entity camera></a-entity>
